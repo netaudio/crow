@@ -40,6 +40,11 @@ endif()
 
 include_directories( ${Boost_INCLUDE_DIR} )
 
+ link_directories(/usr/local/boost_1_66_0/lib/)
+
+
+    link_libraries(boost_system)
+
 set(PROJECT_INCLUDE_DIR
     ${PROJECT_SOURCE_DIR}/include
 )
